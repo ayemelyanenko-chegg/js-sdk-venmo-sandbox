@@ -1,0 +1,26 @@
+body {
+    font-family: Helvetica, Arial,
+        sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App > div {
+  margin-bottom: 16px;
+}
+
+.ConfigPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.CheckboxSection {
+  display: flex;
+}
+
+.ButtonPreview {
+  max-width: 350px;
+}

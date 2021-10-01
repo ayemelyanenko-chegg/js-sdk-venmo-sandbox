@@ -1,11 +1,13 @@
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import QuickLinks from './QuickLinks';
+import ButtonPreview from './ButtonPreview';
+import ConfigPanel from './ConfigPanel';
 
-function App() {
+export default function App() {
   return (
-    <PayPalScriptProvider options={{ "client-id": "test" }}>
-      <PayPalButtons style={{ layout: "horizontal" }} />
-    </PayPalScriptProvider>
+    <div className="App">
+      <QuickLinks/>
+      <ConfigPanel/>
+      <ButtonPreview/>
+    </div>
   );
 }
-
-export default App;
