@@ -1,8 +1,10 @@
+/* Main */
 body {
     font-family: Helvetica, Arial,
         sans-serif;
 }
 
+/* App */
 .App {
   display: flex;
   flex-direction: column;
@@ -12,15 +14,40 @@ body {
   margin-bottom: 16px;
 }
 
+/* Config Panel */
 .ConfigPanel {
   display: flex;
   flex-direction: column;
+  max-width: 350px;
 }
 
-.CheckboxSection {
+.ClientIdContainer {
+  display: flex;
+  margin: 12px 0;
+}
+
+.ClientIdContainer label{
+  white-space: nowrap;
+  margin-right: 14px;
+}
+
+.ClientIdContainer input {
+  width: 100%;
+}
+
+.CheckboxContainer {
   display: flex;
 }
 
+.CheckboxContainer > div {
+  margin-right: 12px;
+}
+
+.CheckboxContainer > div input {
+  margin-right: 8px;
+}
+
+/* Button Preview */
 .ButtonPreview {
   max-width: 350px;
 }

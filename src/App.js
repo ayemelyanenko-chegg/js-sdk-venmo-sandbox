@@ -1,11 +1,11 @@
-import QuickLinks from './QuickLinks';
+// import QuickLinks from './QuickLinks';
 import ButtonPreview from './ButtonPreview';
 import ConfigPanel from './ConfigPanel';
 
 export default function App() {
   return (
     <div className="App">
-      <QuickLinks/>
+      {/* <QuickLinks/> */}
       <ConfigPanel/>
       <ButtonPreview/>
     </div>
