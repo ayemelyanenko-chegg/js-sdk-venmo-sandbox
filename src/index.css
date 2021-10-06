@@ -15,7 +15,7 @@ body {
 }
 
 /* Config Panel */
-.ConfigPanel {
+.ButtonConfig {
   display: flex;
   flex-direction: column;
   max-width: 350px;

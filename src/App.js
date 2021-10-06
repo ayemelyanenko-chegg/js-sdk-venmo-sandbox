@@ -1,13 +1,15 @@
-// import QuickLinks from './QuickLinks';
 import ButtonPreview from './ButtonPreview';
-import ConfigPanel from './ConfigPanel';
+import ButtonConfig from './ButtonConfig';
+import { FormProvider } from "./FormContext";
+
 
 export default function App() {
   return (
     <div className="App">
-      {/* <QuickLinks/> */}
-      <ConfigPanel/>
-      <ButtonPreview/>
+      <FormProvider>
+        <ButtonConfig/>
+        <ButtonPreview/>
+      </FormProvider>
     </div>
   );
 }
