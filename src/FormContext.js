@@ -24,6 +24,12 @@ function formReducer(state, action) {
         clientID: action.value,
       }
 
+    case "setEnableVenmo":
+      return {
+        ...state,
+        enableVenmo: action.value,
+      }
+
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     }
@@ -42,6 +48,7 @@ export function FormProvider({ children }) {
     clientID: 'sb',
     horizontal: false,
     standalone: false,
+    enableVenmo: false,
   };
 
   const [state, dispatch] = useReducer(formReducer, initialState);

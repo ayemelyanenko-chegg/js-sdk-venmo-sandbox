@@ -7,9 +7,6 @@ export default function ButtonPreview() {
     { horizontal, standalone },
   ] = useFormReducer();
 
-  console.log("horizontal", horizontal)
-  console.log("standalone", standalone)
-
   function generateButtonPreview() {
     if (horizontal) {
       return(
