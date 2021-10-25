@@ -57,7 +57,9 @@ export function FormProvider({ children }) {
     <FormContext.Provider value={state}>
       <FormDispatchContext.Provider value={dispatch}>
         <PayPalScriptProvider options={{
-          "client-id": initialState.clientID,
+          "client-id": "alc_client1",
+          sdkBaseURL: "https://localhost:8443/sdk/js",
+          "enable-funding": "venmo"
         }}>
           {children}
         </PayPalScriptProvider>
